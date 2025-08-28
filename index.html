@@ -28,29 +28,29 @@
 
 <body class="roboto-regular">
     <header class="pt-5">
-        <nav class="container mx-auto flex justify-between items-center mb-5">
+        <nav class="container mx-auto flex flex-col sm:flex-row justify-between items-center mb-5">
             <div class="flex gap-3 items-center">
                 <img class="w-[50px] h-[50px]" src="assets/logo.png" alt="">
-                <div>
+                <div class="flex gap-2 sm:block">
                     <h1 class="font-black text-2xl text-[#006747] -mb-1">Emergency</h1>
                     <h1 class="font-black text-2xl text-[#006747]">Service</h1>
                 </div>
             </div>
-            <div class="flex gap-5">
-                <button class="flex btn rounded-full">
-                    <span>0</span>
+            <div class="flex gap-5 mt-4 sm:mt-0">
+                <button class="flex btn shadow-none border-none px-6 bg-[#41FF6B1A] rounded-full">
+                    <span class="font-bold text-base">0</span>
                     <img class="w-[30px]" src="assets/heart.png" alt="">
                 </button>
-                <button class="flex btn rounded-full">
-                    <span>100</span>
+                <button class="flex btn shadow-none border-none px-5 bg-[#41FF6B1A] rounded-full">
+                    <span class="font-bold text-base">100</span>
                     <img class="w-[30px]" src="assets/coin.png" alt="">
                 </button>
-                <button class="btn btn-success rounded-full">
-                    <p>0 Copy</p>
+                <button class="btn btn-success rounded-full bg-[#00A63E] text-white px-5 border-none">
+                    <p class="text-base">0 Copy</p>
                 </button>
             </div>
         </nav>
-        <section class="flex flex-col items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] p-5">
+        <section class="flex flex-col items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] p-5 text-center">
             <img class="w-[92px]" src="assets/logo-dark.png" alt="" srcset="">
             <h1 class="font-bold text-white text-3xl my-3">জরুরি সেবা ডিরেক্টরি</h1>
             <p class="text-white">Government Emergency Services at Your Fingertip – A Project by Government of the
@@ -58,10 +58,10 @@
         </section>
     </header>
 
-    <main class="bg-[#f5fff6] pt-12 pb-24">
-        <section class="container mx-auto grid grid-cols-4 gap-7">
+    <main class="bg-[#f5fff6] pt-12 pb-24 px-5">
+        <section class="container mx-auto grid sm:grid-cols-4 gap-7">
             <!-- Contact Sections -->
-            <div class="col-span-3 grid grid-cols-3 gap-7">
+            <div class="sm:col-span-3 grid sm:grid-cols-3 gap-7">
                 <!-- card -01 -->
                 <div class="card  bg-base-100 card-lg shadow-sm">
                     <div class="p-8">
