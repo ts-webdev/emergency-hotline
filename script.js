@@ -50,3 +50,17 @@ for (const callBtn of callButtons) {
 
     })
 }
+
+// Copy btn functionality
+const copyButtons = document.getElementsByClassName('copy-btn');
+for (const copyButton of copyButtons) {
+    copyButton.addEventListener('click', function () {
+        const totalCopyCount = Number(getElement('copy-count').innerText) + 1;
+        getElement('copy-count').innerText = totalCopyCount;
+
+        // copy text
+        const callNumber = copyButton.parentElement.parentElement.childNodes[7].innerText;
+        navigator.clipboard.writeText(callNumber);
+        alert(`নম্বর কপি হয়েছে: ${callNumber}`)
+    })
+}
