@@ -64,3 +64,9 @@ for (const copyButton of copyButtons) {
         alert(`নম্বর কপি হয়েছে: ${callNumber}`)
     })
 }
+
+// Clear btn functionality
+ getElement('clear-btn').addEventListener('click', function(){
+    const historyContainer = getElement('clear-btn').parentElement.parentElement.childNodes[3];
+    historyContainer.innerHTML = ''
+ });
